@@ -12,7 +12,7 @@ Requirements
 * Debian/Ubuntu
 
 Tested on Ubuntu 8.10, though should work on most Linux distributions,
-see `hadoop[:java_home]`.
+see `hadoop['java_home']`.
 
 ## Cookbooks:
 
@@ -21,11 +21,11 @@ see `hadoop[:java_home]`.
 Attributes
 ==========
 
-* `hadoop[:mirror_url]` - Get a mirror from http://www.apache.org/dyn/closer.cgi/hadoop/core/.
-* `hadoop[:version]` - Specify the version of hadoop to install.
-* `hadoop[:uid]` - Default userid of the hadoop user.
-* `hadoop[:gid]` - Default group for the hadoop user.
-* `hadoop[:java_home]` - You will probably want to change this to match where Java is installed on your platform.
+* `hadoop['mirror_url']` - Get a mirror from http://www.apache.org/dyn/closer.cgi/hadoop/core/.
+* `hadoop['version']` - Specify the version of hadoop to install.
+* `hadoop['uid']` - Default userid of the hadoop user.
+* `hadoop['gid']` - Default group for the hadoop user.
+* `hadoop['java_home']` - You will probably want to change this to match where Java is installed on your platform.
 
 You may wish to add more attributes for tuning the configuration file templates.
 
