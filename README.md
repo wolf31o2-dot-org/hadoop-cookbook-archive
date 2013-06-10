@@ -39,7 +39,7 @@ site-cookbook and modify the templates to meet your requirements.
 Once the recipe is run, the distributed filesystem can be formated
 using the script /usr/bin/hadoop.
 
-    sudo -u hadoop /usr/bin/hadoop namenode -format
+    sudo -u hdfs /usr/bin/hadoop namenode -format
   
 You may need to set up SSH keys for hadoop management commands. 
 
