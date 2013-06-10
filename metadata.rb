@@ -6,6 +6,7 @@ description       "Installs hadoop and sets up basic cluster per Cloudera's quic
 long_description  IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version           "0.8.1"
 depends           "java"
+depends           "apt"
 
 recipe "hadoop", "Installs hadoop from Cloudera's repo"
 recipe "hadoop::conf_pseudo", "Installs hadoop-conf-pseudo and enables hadoop services"
