@@ -19,20 +19,12 @@
 
 include_recipe "java"
 
-execute "apt-get update" do
-  action :nothing
-end
-
-template "/etc/apt/sources.list.d/cloudera.list" do
-  owner "root"
-  mode "0644"
-  source "cloudera.list.erb"
-  notifies :run, resources("execute[apt-get update]"), :immediately
-end
-
-execute "curl -s http://archive.cloudera.com/debian/archive.key | apt-key add -" do
-  not_if "apt-key export 'Cloudera Apt Repository'"
+apt_repository "cloudera" do
+   uri "http://archive.cloudera.com/cdh4/ubuntu/precise/amd64/cdh/"
+   arch "amd64"
+   distribution "precise-cdh4"
+   components ["contrib"]
+   key "http://archive.cloudera.com/debian/archive.key"
 end
 
 package "hadoop"
-
