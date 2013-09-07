@@ -32,8 +32,8 @@ You may wish to add more attributes for tuning the configuration file templates.
 Usage
 =====
 
-This cookbook performs the tasks described in the Hadoop Quick
-Start[1] to get the software installed. You should copy this to a
+This cookbook performs the tasks described in the [Hadoop Quick Start](http://wiki.apache.org/hadoop/QuickStart)
+to get the software installed. You should copy this to a
 site-cookbook and modify the templates to meet your requirements.
 
 Once the recipe is run, the distributed filesystem can be formated
@@ -46,7 +46,7 @@ You may need to set up SSH keys for hadoop management commands.
 Note that this is not the 'default' config per se, so using the
 start-all.sh script won't start the processes because the config files
 live elsewhere. For running various hadoop processes as services, we
-suggest runit. A sample 'run' script is provided. The HADOOP_LOG_DIR
+suggest runit. A sample 'run' script is provided. The `HADOOP_LOG_DIR`
 in the run script must exist for each process. These could be wrapped
 in a define.
 
@@ -54,8 +54,6 @@ in a define.
 * jobtracker
 * namenode
 * tasktracker
-
-[1] http://hadoop.apache.org/core/docs/current/quickstart.html
 
 License and Author
 ==================
