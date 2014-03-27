@@ -1,3 +1,8 @@
+# DEPRECATED DEPRECATED DEPRECATED
+
+Please use http://github.com/continuuity/hadoop_cookbook instead!
+
+
 Description
 ===========
 
